@@ -11,7 +11,7 @@ public class TaskSet {
     public static void checkSumSign() {
         int a = 10, b = -5;
         int sum = a + b;
-        System.out.println(sum >= 0 ? "Сумма положительная" : "Сумма отрицательная");
+        System.out.println(sum >= 0 ? "Сума положительная" : "Сумма отрицательная");
     }
 
     // 3
@@ -20,9 +20,9 @@ public class TaskSet {
         if (value <= 0) {
             System.out.println("Красный");
         } else if (value <= 100) {
-            System.out.println("Жёлтый");
+            System.out.println("Желтый");
         } else {
-            System.out.println("Зелёный");
+            System.out.println("Зеленый");
         }
     }
 
@@ -92,7 +92,7 @@ public class TaskSet {
             matrix[i][i] = 1;
         }
 
-        // Вывод матрицы
+
         for (int[] row : matrix) {
             for (int val : row) {
                 System.out.print(val + " ");
