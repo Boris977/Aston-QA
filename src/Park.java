@@ -13,7 +13,7 @@ public class Park {
 
         public void printInfo() {
             System.out.println("Атракцион: " + name);
-            System.out.println("Время работы: " + workingHours);
+            System.out.println("Время работ: " + workingHours);
             System.out.println("Стоимость: " + price + "₽");
             System.out.println("------------------------------");
         }
