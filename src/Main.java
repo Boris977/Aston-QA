@@ -1,16 +1,33 @@
 public class Main {
     public static void main(String[] args) {
-        Product[] productsArray = new Product[5];
+        Dog dog1 = new Dog("Бобик");
+        Cat cat1 = new Cat("Мурзик");
+        Cat cat2 = new Cat("Барсик");
 
-        productsArray[0] = new Product("Samsung S25 Ultra", "01.02.2025", "Samsung Corp.", "Korea", 5599, true);
-        productsArray[1] = new Product("iPhone 14 Pro", "15.01.2025", "Apple Inc.", "USA", 6299, false);
-        productsArray[2] = new Product("Xiaomi Mix 5", "20.12.2024", "Xiaomi Ltd.", "China", 4299, true);
-        productsArray[3] = new Product("Sony Xperia Z5", "05.11.2024", "Sony Corp.", "Japan", 3999, false);
-        productsArray[4] = new Product("Nokia Legend", "09.10.2024", "Nokia", "Finland", 2899, true);
+        dog1.run(400);
+        dog1.swim(8);
 
+        cat1.run(150);
+        cat1.swim(5);
 
-        for (Product product : productsArray) {
-            product.printInfo();
+        Bowl bowl = new Bowl(25);
+
+        Cat[] cats = {cat1, cat2};
+        int portion = 15;
+
+        for (Cat cat : cats) {
+            cat.eat(bowl, portion);
         }
+
+        System.out.println("\nСостояние сытости котов:");
+        for (Cat cat : cats) {
+            System.out.println(cat.name + ": " + (cat.isFull() ? "сыт" : "голоден"));
+        }
+
+        System.out.println("\nСтатистика:");
+        System.out.println("Всего животных: " + Animal.countAnimals);
+        System.out.println("Котов: " + Cat.getCountCats());
+        System.out.println("Собак: " + Dog.getCountDogs());
+        System.out.println("Осталось еды: " + bowl.getFood());
     }
 }
