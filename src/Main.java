@@ -23,7 +23,7 @@ public class Main {
             int[] numbers = {1, 2, 3};
             System.out.println(numbers[5]); // Индекс вне диапазона
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Исключение: выход за пределы массива — " + e.getMessage());
+            System.out.println("Иключение: выход за пределы массива — " + e.getMessage());
         }
     }
     }

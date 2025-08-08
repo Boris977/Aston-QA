@@ -14,7 +14,7 @@ class MyArrayDataException extends Exception {
 class ArrayProcessor {
     public static int processArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
         if (array.length != 4 || array[0].length != 4) {
-            throw new MyArraySizeException("Массив должен быть размером 4x4");
+            throw new MyArraySizeException("Масив должен быть размером 4x4");
         }
 
         int sum = 0;
