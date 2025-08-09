@@ -33,3 +33,26 @@ class Student {
                 name, group, course, getAverageGrade());
     }
 }
+
+class StudentUtils {
+    public static void removeLowPerformers(Set<Student> students) {
+        students.removeIf(s -> s.getAverageGrade() < 3);
+    }
+
+    public static void promoteStudents(Set<Student> students) {
+        for (Student s : students) {
+            if (s.getAverageGrade() >= 3) {
+                s.promote();
+            }
+        }
+    }
+
+    public static void printStudents(Set<Student> students, int course) {
+        System.out.println("Студенты на курсе " + course + ":");
+        for (Student s : students) {
+            if (s.getCourse() == course) {
+                System.out.println(s.getName());
+            }
+        }
+    }
+}
