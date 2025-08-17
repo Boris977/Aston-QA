@@ -39,7 +39,7 @@ public class Main {
         dog1.swim(5);
 
         cat1.run(150);
-        cat1.swim(2); // не умеет
+        cat1.swim(2);
 
         System.out.println("Создано животных: " + Animal.countAnimals);
         System.out.println("Котов: " + Cat.getCountCats());
@@ -60,7 +60,7 @@ public class Main {
             System.out.println(cat.name + " — " + status);
         }
 
-        bowl.addFood(15); // добавим еды
+        bowl.addFood(15);
 
         System.out.println("\n=== Задание 2: Геометрические фигуры ===");
 

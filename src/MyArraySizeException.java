@@ -18,7 +18,7 @@ class ArrayProcessor {
         }
 
         int sum = 0;
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 4; j++) {
                 try {
                     sum += Integer.parseInt(array[i][j]);
@@ -29,5 +29,4 @@ class ArrayProcessor {
         }
         return sum;
     }
-}git checkout lesson-5.6
-        git rebase lesson_4
+}
